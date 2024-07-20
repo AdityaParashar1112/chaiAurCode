@@ -20,6 +20,13 @@ app.get('/',(req,res)=>
     res.send('Hey Get Call')
 })
 
+
+app.get('/twitter',(req,res)=>{
+    
+    const todayDate = Date.now();
+     res.send(`Today Date is ${todayDate}`);
+})
+
 app.get('/data',(req,res)=>{
     res.json(data);})
 
